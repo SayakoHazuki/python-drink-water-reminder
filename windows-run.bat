@@ -1,3 +1,3 @@
 @echo off
-pyw -3.10 <*ABSPATH*>/Python-drink-water-reminder/main.pyw %*
+pyw -3.10 <*DIRPATH*>/main.pyw %*
 pause

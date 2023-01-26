@@ -1,0 +1,38 @@
+# Python Drink Water Reminder
+
+This is a python script that will remind you to drink water every 30 minutes.
+The interval can be changed by changing the value of `interval` in `config.ini` (in minutes).
+
+## Requirements
+
+- Python 3 (Tested on Python 3.10)
+- Plyer (Tested on Plyer 2.1.0)
+- (Optional) Windows's Python Launcher
+
+## Setup
+
+- Install Python if you haven't
+- Run `pip install -r requirements.txt` to install the required python package (Plyer) automatically  
+   (If you have Windows's Python Launcher installed, you can run `py -3.10 -m pip install -r requirements.txt` instead)
+
+## Run
+
+#### Without Windows's Python Launcher
+
+```bash
+cd DIRPATH # Change DIRPATH into the absolute path of the cloned repository's directory (E.g. C:\Users\user\Documents\python-drink-water-reminder)
+python main.pyw
+```
+
+#### With Windows's Python Launcher
+
+```bash
+cd DIRPATH # Change DIRPATH into the absolute path of the cloned repository's directory (E.g. C:\Users\user\Documents\python-drink-water-reminder)
+py -3.10 main.pyw
+```
+
+## Run on startup (Windows)
+
+1. Change `<*DIRPATH*>` in `windows-run.bat` into the absolute path of the cloned repository's directory (E.g. `C:\Users\user\Documents\python-drink-water-reminder`)
+2. Move the file to Windows's Startup folder (Press Win+R to bring up the Run dialogue and type `shell:startup` to open the Startup folder)
+3. It will now run on startup starting from the next time you boot your computer
