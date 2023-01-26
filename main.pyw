@@ -1,9 +1,11 @@
 from plyer import notification
+import os
 import time
 import configparser
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+abspath = os.path.join(os.path.dirname(__file__), 'config.ini')
+config.read(abspath)
 
 interval = int(config['SETTINGS']['interval'])
 
